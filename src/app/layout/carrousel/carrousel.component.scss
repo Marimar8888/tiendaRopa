@@ -1,40 +1,9 @@
-/*.carousel-item{
-  height: 400px;
-}*/
+.carousel-item{
+  max-height: 500px;
+}
 
 .carrousel{
-  width: 90%;
-  max-width: 120em;
-  overflow: hidden;
-
-
-}
-.grande{
-  width: 300%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.img{
-  width: calc( 100% / 2 );
-
-  min-height: 10vh;
-  max-height: 40vh;
-}
-.puntos{
   width: 100%;
-  background-color: red;
-  padding: 1em;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 }
-.punto{
-  width: 2em;
-  height: 2em;
-  background-color: blue;
-  margin: 1em;
-  list-style: none;
-}
+
+
