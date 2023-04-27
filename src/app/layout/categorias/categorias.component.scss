@@ -1,39 +1,97 @@
-$background-color:rgb(255, 69, 100);
+$color_1: black;
+$color_2: bl;
+$color_3: white;
+$color_4: wheat;
+$background-color_1: rgb(255, 69, 100);
+$background-color_2: white;
 
+div.cuerpo-categorias {
+	background-color: $background-color_1;
+	padding-bottom: 30px;
+}
+div#carousel {
+	width: 60%;
+	margin: 0 auto;
+}
+div#cuerpo-categorias {
+	width: 60%;
+	position: relative;
+	margin: 0 auto;
+	p {
+		margin-right: 65px;
+		float: left;
+		padding-left: 30px;
+		justify-content: center;
+		text-align: center;
+	}
+}
+p.card {
+	.card-text {
+		position: absolute;
+		top: 85%;
+		left: 30%;
+		text-align: center;
+		font-weight: bold;
+		height: 0;
+		border: none;
+	}
+}
+p {
+	.card-text {
+		background-color: $background-color_2;
+	}
+	.card {
+		color: $color_1;
+	}
+}
 .card {
-  width: 35%;
-  margin: 10px;
+	width: 35%;
+	margin: 10px;
+	color: $color_2;
 }
-
 .banner {
-  width: 95%;
+	width: 60%;
 }
-
 .item {
-  min-width: 20%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  max-height: 30%;
-
+	min-width: 20%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	max-height: 30%;
 }
-
 .items {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
-
-.title-banner{
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  padding: 10px;
-  font-size: 2em;
+.title-banner {
+	color: $color_3;
+	text-align: center;
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 2em;
 }
-
-div.cuerpo-categorias{
-  background-color: $background-color;
+img {
+	width: 100%;
+	min-height: 160px;
+	position: relative;
+}
+div.carousel-link {
+	width: 60%;
+	margin: 0 auto;
+}
+p.card-text {
+	a {
+		color: $color_3;
+		&:hover {
+			color: $color_4;
+			text-decoration: none;
+			font-size: 18px;
+		}
+		&:active {
+			text-decoration: none;
+		}
+	}
 }

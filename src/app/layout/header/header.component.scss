@@ -1,4 +1,6 @@
+$background-color_1: black;
+
 .header {
-  background-color: black;
-  height: 50px;
+	background-color: $background-color_1;
+	height: 50px;
 }
