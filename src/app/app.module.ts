@@ -12,6 +12,8 @@ import { CarrouselComponent } from './layout/carrousel/carrousel.component';
 import { BannersComponent } from './layout/banners/banners.component';
 import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
+
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     TiendaComponent,
     NosotrosComponent,
     NavComponent,
+    NavCategoriasComponent,
     HeaderComponent,
     CarrouselComponent,
     BannersComponent,

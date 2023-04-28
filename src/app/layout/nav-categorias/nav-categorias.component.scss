@@ -1,0 +1,30 @@
+$background-color_1: rgb(207, 203, 203);
+$background-color_4: white;
+$background-color_6: rgb(155, 152, 152);
+$color_1: rgb(255, 69, 100);
+$color_3: white;
+
+
+#nav-items{
+  top: 10%;
+  position: absolute;
+  justify-content: right;
+  text-align: right;
+  display: flex;
+  width: 100%;
+  background-color: $background-color_1;
+  right: 0%;
+  font-style: italic;
+}
+
+
+ul>li.active{
+  font-weight: bold;
+  background-color: $background-color_4;
+  color: $color_1;
+}
+
+li a.nav-link:hover{
+  background-color: $background-color_6;
+  color: $color_3;
+}
