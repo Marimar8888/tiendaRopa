@@ -15,6 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
 import { CatalogoComponent } from './layout/catalogo/catalogo.component';
 import { FichaComponent } from './layout/ficha/ficha.component';
+import { SobreComponent } from './layout/sobre/sobre.component';
 
 
 
@@ -32,7 +33,8 @@ import { FichaComponent } from './layout/ficha/ficha.component';
     CategoriasComponent,
     FooterComponent,
     CatalogoComponent,
-    FichaComponent
+    FichaComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
