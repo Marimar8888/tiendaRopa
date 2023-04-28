@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './dashboard/home/home.component';
 import { TiendaComponent } from './dashboard/tienda/tienda.component';
 import { NosotrosComponent } from './dashboard/nosotros/nosotros.component';
+import { FichaComponent } from './layout/ficha/ficha.component';
 
 /*const routes: Routes = [
   {path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ import { NosotrosComponent } from './dashboard/nosotros/nosotros.component';
 const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'nosotros', component: NosotrosComponent},
+  {path: 'ficha', component: FichaComponent },
   {
       path: 'tienda',
       component: TiendaComponent,
@@ -35,7 +37,8 @@ const routes: Routes = [
           {
             path: 'corbatas',
             component: TiendaComponent
-        },
+          },
+
 
       ]
   },

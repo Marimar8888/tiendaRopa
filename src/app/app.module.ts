@@ -13,6 +13,8 @@ import { BannersComponent } from './layout/banners/banners.component';
 import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
+import { CatalogoComponent } from './layout/catalogo/catalogo.component';
+import { FichaComponent } from './layout/ficha/ficha.component';
 
 
 
@@ -28,7 +30,9 @@ import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.c
     CarrouselComponent,
     BannersComponent,
     CategoriasComponent,
-    FooterComponent
+    FooterComponent,
+    CatalogoComponent,
+    FichaComponent
   ],
   imports: [
     BrowserModule,
