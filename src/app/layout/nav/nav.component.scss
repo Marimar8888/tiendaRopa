@@ -1,11 +1,11 @@
-$background-color_4: white;
+$background-color_1: white;
 $background-color_5: rgb(212, 208, 208);
 $color_1: black;
 $color_3: white;
 
 #navbar{
   padding: 0 0;
-  background-color: $background-color_4;
+  background-color: $background-color_1;
 }
 
 ul#nav-items{
@@ -14,7 +14,7 @@ ul#nav-items{
   text-align: right;
   display: flex;
   width: 100%;
-  background-color: $background-color_4;
+  background-color: $background-color_1;
   right: 0%;
   font-style: italic;
   padding: 10px 10px;

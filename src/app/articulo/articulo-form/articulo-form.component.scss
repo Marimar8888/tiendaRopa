@@ -1,0 +1,40 @@
+$background-color_7: rgb(192, 188, 188);
+
+#kanban {
+	width: 60%;
+	display: inline-block;
+	text-align: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.column_1 {
+	width: 30%;
+	max-height: 100%;
+	display: inline-block;
+	margin-left: 50px;
+	top: 150px;
+}
+.column_2 {
+	width: 30%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 15px;
+	text-align: left;
+}
+img {
+	width: 100%;
+	min-height: 350px;
+}
+div.size {
+	border: 1px solid black;
+	display: inline-block;
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-color: $background-color_7;
+	text-align: center;
+}

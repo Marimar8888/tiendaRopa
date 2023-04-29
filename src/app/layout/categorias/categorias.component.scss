@@ -2,11 +2,11 @@ $color_1: black;
 $color_3: white;
 $color_4: wheat;
 $color_5:rgb(255, 69, 100);
-$background-color_1: rgb(255, 69, 100);
-$background-color_2: white;
+$background-color_2: rgb(255, 69, 100);
+$background-color_1: white;
 
 div.cuerpo-categorias {
-	background-color: $background-color_1;
+	background-color: $background-color_2;
 	padding-bottom: 30px;
 }
 div#carousel {
@@ -38,7 +38,7 @@ p.card {
 }
 p {
 	.card-text {
-		background-color: $background-color_2;
+		background-color: $background-color_1;
 	}
 	.card {
 		color: $color_1;

@@ -14,8 +14,10 @@ import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
 import { CatalogoComponent } from './layout/catalogo/catalogo.component';
-import { FichaComponent } from './layout/ficha/ficha.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
+import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.component';
+import { ArticuloFormComponent } from './articulo/articulo-form/articulo-form.component';
+import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.component';
 
 
 
@@ -33,8 +35,10 @@ import { SobreComponent } from './layout/sobre/sobre.component';
     CategoriasComponent,
     FooterComponent,
     CatalogoComponent,
-    FichaComponent,
-    SobreComponent
+    SobreComponent,
+    ArticuloListComponent,
+    ArticuloFormComponent,
+    ArticuloCardComponent
   ],
   imports: [
     BrowserModule,
