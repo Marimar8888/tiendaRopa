@@ -8,7 +8,7 @@ import { ArticuloFormComponent } from './articulo/articulo-form/articulo-form.co
 const routes: Routes = [
   {path: '', component: HomeComponent },
   {path: 'nosotros', component: NosotrosComponent},
-  {path: 'ficha', component: ArticuloFormComponent },
+  {path: 'ficha/:idArticulo', component: ArticuloFormComponent },
   {
       path: 'tienda',
       component: TiendaComponent,

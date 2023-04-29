@@ -1,7 +1,7 @@
-<div class="card item" ><a class="text">
-  <img class="card-img" src="" alt="Imagen de una Chaqueta">
-    <p class="text">Womens jackets</p>
-    <p class="price">15€</p></a>
+<div class="card item" ><a class="text" *ngIf="articulo">
+  <img class="card-img" [src]="articulo.getImage()" alt="Imagen de una Chaqueta">
+    <p class="text">{{articulo.getTitulo()}}</p>
+    <p class="price">{{articulo.getPrecio()}}</p></a>
     <div class="group">
       <i class="fas fa-heart"></i>
     </div>

@@ -23,64 +23,64 @@ export class Articulo {
       this._tallaXxl = tallaXxl;
   }
 
-  get idArt(): number{
+  public getIdArt(): number{
     return this._idArt;
   }
-  get titulo(): string{
+  public getTitulo(): string{
     return this._titulo;
   }
-  get imagen(): string{
+  public getImagen(): string{
     return this._image;
   }
-  get precio(): number{
+  public getPrecio(): number{
     return this._precio;
   }
-  get tallaXs(): boolean{
+  public getTallaXs(): boolean{
     return this._tallaXs;
   }
-  get tallaS(): boolean{
+  public getTallaS(): boolean{
     return this._tallaS;
   }
-  get tallaM(): boolean{
+  public getTallaM(): boolean{
     return this._tallaM;
   }
-  get tallaL(): boolean{
+  public getTallaL(): boolean{
     return this._tallaL;
   }
-  get tallaXl(): boolean{
+  public getTallaXl(): boolean{
     return this._tallaXl;
   }
-  get tallaXxl(): boolean{
+  public getTallaXxl(): boolean{
     return this._tallaXxl;
   }
-  set idArt(idArt: number){
+  public setIdArt(idArt: number){
     this._idArt = idArt;
   }
-  set titulo(titulo: string){
+  public setTitulo(titulo: string){
     this._titulo = titulo;
   }
-  set image(image: string){
+  public setImage(image: string){
     this._image = image;
   }
-  set precio(precio: number){
+  public setPrecio(precio: number){
     this._precio = precio;
   }
-  set tallaXs(tallaXs: boolean){
+  public setTallaXs(tallaXs: boolean){
     this._tallaXs = tallaXs;
   }
-  set tallaS(tallaS: boolean){
+  public setTallaS(tallaS: boolean){
     this._tallaS = tallaS;
   }
-  set tallaM(tallaM: boolean){
+  public setTallaM(tallaM: boolean){
     this._tallaM = tallaM;
   }
-  set tallaL(tallaL: boolean){
+  public setTallaL(tallaL: boolean){
     this._tallaL = tallaL;
   }
-  set tallaXl(tallaXl: boolean){
+  public setTallaXl(tallaXl: boolean){
     this._tallaXl = tallaXl;
   }
-  set tallaXxl(tallaXxl: boolean){
+  public setTallaXxl(tallaXxl: boolean){
     this._tallaXxl = tallaXxl;
   }
 

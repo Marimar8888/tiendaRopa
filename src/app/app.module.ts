@@ -13,11 +13,13 @@ import { BannersComponent } from './layout/banners/banners.component';
 import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
-import { CatalogoComponent } from './layout/catalogo/catalogo.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
 import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.component';
 import { ArticuloFormComponent } from './articulo/articulo-form/articulo-form.component';
 import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.component';
+import { CarouselListComponent } from './carousel/carousel-list/carousel-list.component';
+import { CarouselCardComponent } from './carousel/carousel-card/carousel-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -34,15 +36,17 @@ import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.co
     BannersComponent,
     CategoriasComponent,
     FooterComponent,
-    CatalogoComponent,
     SobreComponent,
     ArticuloListComponent,
     ArticuloFormComponent,
-    ArticuloCardComponent
+    ArticuloCardComponent,
+    CarouselListComponent,
+    CarouselCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
