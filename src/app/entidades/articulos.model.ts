@@ -1,21 +1,19 @@
-import { IArticulos } from "../articulo/articulo.interface";
 
-export class Articulos {
-  private _idArt: number;
+export class Articulos  {
+  private _id: number;
   private _image: string;
   private _titulo: string;
   private _precio: number;
 
-  constructor(idArt: number, titulo:string, image: string, precio: number) {
-      this._idArt = idArt;
+  constructor(id: number, titulo:string, image: string, precio: number) {
+      this._id = id;
       this._image = image;
       this._titulo = titulo;
       this._precio = precio;
-
   }
 
-  public getIdArt(): number{
-    return this._idArt;
+  public getId(): number{
+    return this._id;
   }
 
   public getImage(): string{
@@ -29,8 +27,8 @@ export class Articulos {
     return this._precio;
   }
 
-  public setIdArt(idArt: number){
-    this._idArt = idArt;
+  public setIdArt(id: number){
+    this._id = id;
   }
 
   public setImage(image: string){

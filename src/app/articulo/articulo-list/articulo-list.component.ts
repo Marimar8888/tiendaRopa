@@ -10,8 +10,8 @@ import { Articulos } from 'src/app/entidades/articulos.model';
 })
 export class ArticuloListComponent implements OnInit{
 
-  @Input() articulos: Articulos [] = [];
-
+  //@Input() articulos: Articulos [] = [];
+  @Input() articulosList!: Articulos [];
   idArticulo?: string;
 
   constructor(

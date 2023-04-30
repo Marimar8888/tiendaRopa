@@ -9,6 +9,6 @@ import { Articulos } from 'src/app/entidades/articulos.model';
 export class ArticuloCardComponent {
 
   //Va a recibir un objeto de la clase Articulos
-  @Input() articulo! : Articulos;
+  @Input() articulo: any;
 
 }
