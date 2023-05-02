@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-carousel-card',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./carousel-card.component.scss']
 })
 export class CarouselCardComponent {
+
+  @Input() imagen: any;
+
 
 }

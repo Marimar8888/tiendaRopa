@@ -1,15 +1,19 @@
 
-export class Articulos  {
+export class ArticuloTienda  {
+
   private _id: number;
   private _image: string;
   private _titulo: string;
   private _precio: number;
+  private _rebaja: number;
 
-  constructor(id: number, titulo:string, image: string, precio: number) {
+
+  constructor(id: number, titulo:string, image: string, precio: number, rebaja: number) {
       this._id = id;
       this._image = image;
       this._titulo = titulo;
       this._precio = precio;
+      this._rebaja = rebaja;
   }
 
   public getId(): number{
@@ -26,6 +30,9 @@ export class Articulos  {
   public getPrecio(): number{
     return this._precio;
   }
+  public getRebaja(): number{
+    return this._rebaja;
+  }
 
   public setIdArt(id: number){
     this._id = id;
@@ -40,6 +47,10 @@ export class Articulos  {
 
   public setPrecio(precio: number){
     this._precio = precio;
+  }
+
+  public setRebaja(rebaja: number){
+    this._rebaja = rebaja;
   }
 
 

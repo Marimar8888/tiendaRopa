@@ -1,8 +1,9 @@
-<div class="card item" ><a class="text" *ngIf="articulo">
-  <img class="card-img" src={{articulo.image}} alt="Imagen de una Chaqueta">
-    <p class="text">{{articulo.titulo}}</p>
-    <p class="price">{{articulo.precio}}</p></a>
-    <div class="group">
-      <i class="fas fa-heart"></i>
-    </div>
-</div>
+
+  <div class="articulo card item"><a class="text" *ngIf="articulo" [routerLink]="['/ficha', articulo.getId()]">
+    <img class="card-img" src={{articulo.getImage()}} alt="Imagen de una Chaqueta">
+      <p class="text">{{articulo.getTitulo()}}</p>
+      <label class="price">{{articulo.getPrecio()}}</label ><label class="rebaja">{{articulo.getRebaja()}}</label></a>
+      <div class="fav">
+        <i class="fas fa-heart"></i>
+      </div>
+  </div>

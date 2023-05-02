@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Articulos } from '../entidades/articulos.model';
 import { HttpClient } from '@angular/common/http';
+
 import { Observable } from 'rxjs';
-import { IArticulos } from './articulo.interface';
-import { map } from 'rxjs';
+
+import { IArticuloTienda } from './articuloTienda.interface';
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,14 +17,10 @@ export class ArticuloService {
     private http: HttpClient
   ) { }
 
-  /*public obternerArticulos(): Observable<Articulos[]> {
+  public obternerArticulos(): Observable<IArticuloTienda[]> {
       const url: string = 'http://localhost:3003/articulos';
-      return this.http.get<Articulos[]>(url);
+      return this.http.get<IArticuloTienda[]>(url);
 
-  }*/
-  public obternerArticulos() {
-    const url: string = 'http://localhost:3003/articulos';
-    return this.http.get<Articulos>(url);
+  }
 
-}
 }

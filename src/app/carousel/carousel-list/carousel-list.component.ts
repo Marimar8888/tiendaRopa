@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { Carousel } from 'src/app/entidades/categorias.model';
+import { Component, Input } from '@angular/core';
+
+import { Carousel } from 'src/app/entidades/carrousel.model';
+
 
 @Component({
   selector: 'app-carousel-list',
   templateUrl: './carousel-list.component.html',
   styleUrls: ['./carousel-list.component.scss']
 })
-export class CarouselListComponent implements OnInit{
+export class CarouselListComponent {
 
-  imagenes: Carousel[]= [];
+  @Input() imagenesList: Carousel[]=[];
 
-  constructor(){}
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
 
 }

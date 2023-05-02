@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { IArticulos } from 'src/app/articulo/articulo.interface';
+
 import { ArticuloService } from 'src/app/articulo/articulo.service';
-import { Articulos } from 'src/app/entidades/articulos.model';
+import { ArticuloTienda } from 'src/app/entidades/articuloTienda.model';
 
 @Component({
   selector: 'app-tienda',
@@ -10,8 +10,8 @@ import { Articulos } from 'src/app/entidades/articulos.model';
 })
 export class TiendaComponent implements OnInit{
 
-  articulosList: Articulos[]=[];
-  articulo: Articulos[] = [];
+  articulosList: ArticuloTienda[]=[];
+
 
   constructor(
     private articuloService: ArticuloService
@@ -22,24 +22,18 @@ export class TiendaComponent implements OnInit{
         this.obtenerArticulos();
   }
 
- /*private obtenerArticulos() {
+ private obtenerArticulos() {
    this.articuloService.obternerArticulos().subscribe(
       (data) =>{
-        data.forEach( (articulo: Articulos) =>{ //recibo los artículos y a través de la interfaz recupero los datos
-          const articuloNew: Articulos = new Articulos(articulo._id, articulo._titulo, articulo._image, articulo._precio);
-          this.articulos.push(articuloNew);
+        data.forEach( (articulo) =>{ //recibo los artículos y a través de la interfaz recupero los datos
+
+          const articuloNew: ArticuloTienda = new ArticuloTienda(articulo.id, articulo.titulo, articulo.image, articulo.precio, articulo.rebaja);
+          this.articulosList.push(articuloNew);
+
         })
       }
 
     )
-  }*/
-
-
-  private obtenerArticulos() {
-    this.articuloService.obternerArticulos().subscribe((result: any) => {
-      this.articulosList = result;
-   });
-
   }
 
  }

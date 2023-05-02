@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Articulos } from 'src/app/entidades/articulos.model';
+import { ArticuloTienda } from 'src/app/entidades/articuloTienda.model';
+
 
 
 @Component({
@@ -10,8 +11,7 @@ import { Articulos } from 'src/app/entidades/articulos.model';
 })
 export class ArticuloListComponent implements OnInit{
 
-  //@Input() articulos: Articulos [] = [];
-  @Input() articulosList!: Articulos [];
+  @Input() articulosList!: ArticuloTienda [];
   idArticulo?: string;
 
   constructor(

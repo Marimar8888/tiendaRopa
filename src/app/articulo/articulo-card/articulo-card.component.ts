@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Articulos } from 'src/app/entidades/articulos.model';
+import { ArticuloTienda } from 'src/app/entidades/articuloTienda.model';
+
 
 @Component({
   selector: 'app-articulo-card',
@@ -9,6 +10,6 @@ import { Articulos } from 'src/app/entidades/articulos.model';
 export class ArticuloCardComponent {
 
   //Va a recibir un objeto de la clase Articulos
-  @Input() articulo: any;
+  @Input() articulo: ArticuloTienda | undefined;
 
 }

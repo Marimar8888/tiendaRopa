@@ -5,27 +5,24 @@ $color_6: red;
 
 $background-color_1: white;
 
-div.catalogo {
-	width: 100%;
-	margin-top: 30px;
-	text-align: center;
-	display: flex;
-	text-align: center;
-	align-items: center;
-	display: inline-block;
-	margin-bottom: 30px;
+div.articulo{
+	width: 250px;
+  height: 300px;
+  margin: 20px;
+  text-align: center;
+
 }
-div.card.item {
-	width: 180px;
-	display: inline-block;
-	margin-right: 50px;
-  margin-left: 50px;
-	margin-top: 50px;
-  border: none;
-}
+
 img.card-img {
-	height: 200px;
+  width: 250px;
+	height: 300px;
+  &:hover {
+    width: 255px;
+    height: 305px;
+    transition: 0.35s ease-in-out;
+  }
 }
+
 a {
 	+ {
 		p {
@@ -35,6 +32,8 @@ a {
 }
 a.text {
 	text-decoration: none;
+  cursor: pointer;
+
 	p.text {
 		color: $color_2;
 		font-size: 18px;
@@ -44,25 +43,27 @@ a.text {
 			color: $color_1;
 			text-decoration: none;
 			font-size: 18px;
+
 		}
 		&:active {
 			text-decoration: none;
 		}
 	}
-	p.price {
+	label.price {
 		color: $color_1;
 		padding: 0;
 		margin: 0px;
-		font-weight: bold;
+
 	}
 }
-p.rebaja {
+label.rebaja {
 	color: $color_6;
 	padding: 0;
-	margin: 0px;
+	margin: 10px;
 	font-weight: bold;
+
 }
-div.group {
+div.fav {
 	background-color: $background-color_1;
 	>i.fas {
 		color: $color_3;
