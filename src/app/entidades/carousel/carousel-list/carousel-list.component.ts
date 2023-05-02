@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Carousel } from 'src/app/entidades/carrousel.model';
+import { Carousel } from 'src/app/entidades/carousel/model/carrousel.model';
 
 
 @Component({

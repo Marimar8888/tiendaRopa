@@ -14,11 +14,11 @@ import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
-import { ArticuloListComponent } from './articulo/articulo-list/articulo-list.component';
-import { ArticuloFormComponent } from './articulo/articulo-form/articulo-form.component';
-import { ArticuloCardComponent } from './articulo/articulo-card/articulo-card.component';
-import { CarouselListComponent } from './carousel/carousel-list/carousel-list.component';
-import { CarouselCardComponent } from './carousel/carousel-card/carousel-card.component';
+import { ArticuloListComponent } from './entidades/articulo/articulo-list/articulo-list.component';
+import { ArticuloFormComponent } from './entidades/articulo/articulo-form/articulo-form.component';
+import { ArticuloCardComponent } from './entidades/articulo/articulo-card/articulo-card.component';
+import { CarouselListComponent } from './entidades/carousel/carousel-list/carousel-list.component';
+import { CarouselCardComponent } from './entidades/carousel/carousel-card/carousel-card.component';
 import { HttpClientModule } from '@angular/common/http';
 
 

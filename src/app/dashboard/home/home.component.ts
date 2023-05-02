@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselService } from 'src/app/carousel/carousel.service';
-import { Carousel } from 'src/app/entidades/carrousel.model';
+import { CarouselService } from 'src/app/entidades/carousel/service/carousel.service';
+import { Carousel } from 'src/app/entidades/carousel/model/carrousel.model';
 
 
 

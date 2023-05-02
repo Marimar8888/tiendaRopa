@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ArticuloTienda } from 'src/app/entidades/articuloTienda.model';
+import { ArticuloTienda } from 'src/app/entidades/articulo/model/articuloTienda.model';
 
 
 

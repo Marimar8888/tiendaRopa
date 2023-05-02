@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Carousel } from '../entidades/categorias.model';
+import { Carousel } from '../model/carrousel.model';
 
 
 

@@ -3,15 +3,13 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { IArticuloTienda } from './articuloTienda.interface';
+import { IArticuloTienda } from '../interface/articuloTienda.interface';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ArticuloService {
-
-
 
   constructor(
     private http: HttpClient
