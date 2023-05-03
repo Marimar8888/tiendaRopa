@@ -17,8 +17,8 @@ import { ArticuloListComponent } from './entidades/articulo/articulo-list/articu
 import { ArticuloFormComponent } from './entidades/articulo/articulo-form/articulo-form.component';
 import { ArticuloCardComponent } from './entidades/articulo/articulo-card/articulo-card.component';
 import { CarouselListComponent } from './entidades/carousel/carousel-list/carousel-list.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HttpRequestIntercept } from './config/interceptores/httpRequest.interceptor';
 
 //Modulo de bootstrap instalado por consola para los carouseles ng add @ng-bootstrap/ng-bootstrap
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -48,7 +48,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     NgbModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpRequestIntercept,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
