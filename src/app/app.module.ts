@@ -8,7 +8,6 @@ import { TiendaComponent } from './dashboard/tienda/tienda.component';
 import { NosotrosComponent } from './dashboard/nosotros/nosotros.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { CarrouselComponent } from './layout/carrousel/carrousel.component';
 import { BannersComponent } from './layout/banners/banners.component';
 import { CategoriasComponent } from './layout/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -18,9 +17,11 @@ import { ArticuloListComponent } from './entidades/articulo/articulo-list/articu
 import { ArticuloFormComponent } from './entidades/articulo/articulo-form/articulo-form.component';
 import { ArticuloCardComponent } from './entidades/articulo/articulo-card/articulo-card.component';
 import { CarouselListComponent } from './entidades/carousel/carousel-list/carousel-list.component';
-import { CarouselCardComponent } from './entidades/carousel/carousel-card/carousel-card.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
+//Modulo de bootstrap instalado por consola para los carouseles ng add @ng-bootstrap/ng-bootstrap
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -32,7 +33,6 @@ import { HttpClientModule } from '@angular/common/http';
     NavComponent,
     NavCategoriasComponent,
     HeaderComponent,
-    CarrouselComponent,
     BannersComponent,
     CategoriasComponent,
     FooterComponent,
@@ -40,13 +40,13 @@ import { HttpClientModule } from '@angular/common/http';
     ArticuloListComponent,
     ArticuloFormComponent,
     ArticuloCardComponent,
-    CarouselListComponent,
-    CarouselCardComponent
+    CarouselListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Carousel } from '../model/carrousel.model';
+import { ICarousel } from '../interface/carousel.interface';
+import { Observable } from 'rxjs';
 
 
 
@@ -13,15 +14,9 @@ export class CarouselService {
     private http: HttpClient
   ) { }
 
-
-  /*public obternerArticulos(): Observable<Articulos[]> {
-      const url: string = 'http://localhost:3003/articulos';
-      return this.http.get<Articulos[]>(url);
-
-  }*/
-  public obternerImagenesCarousel() {
+  public obternerImagenesCarousel(): Observable<ICarousel[]> {
     const url: string = 'http://localhost:3002';
-    return this.http.get<Carousel>(url);
+    return this.http.get<ICarousel[]>(url);
 
 }
 }

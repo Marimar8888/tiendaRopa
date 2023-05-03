@@ -23,10 +23,19 @@ export class HomeComponent implements OnInit{
     this.obternerImagenesCarousel();
 
   }
-  obternerImagenesCarousel() {
-    this.carouselService.obternerImagenesCarousel().subscribe((result: any) => {
-      this.imagenesList = result;
-   });
-  }
+
+  private obternerImagenesCarousel() {
+    this.carouselService.obternerImagenesCarousel().subscribe(
+       (data) =>{
+         data.forEach( (imagen) =>{ //recibo los artículos y a través de la interfaz recupero los datos
+           console.log(imagen);
+           const imagenNew: Carousel = new Carousel(imagen.id, imagen.image, imagen.active);
+           this.imagenesList.push(imagenNew);
+           console.log(imagenNew);
+         })
+       }
+
+     )
+   }
 
 }
