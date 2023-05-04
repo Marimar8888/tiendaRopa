@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit{
     this.obternerImagenesCategoriasCarousel();
 
   }
-  obternerImagenesCategoriasCarousel() {
+ private obternerImagenesCategoriasCarousel() {
     this.categoriaService.obternerImagenesCategoriasCarousel().subscribe(
       (data) =>{
         data.forEach( (imagen) =>{ //recibo los artículos y a través de la interfaz recupero los datos

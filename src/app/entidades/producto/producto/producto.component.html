@@ -1,11 +1,11 @@
-
-    <img mat-card-image [src]="product.image" [alt]="product.title">
-    <mat-card-content>
-      <p>
-        {{ product.description }}
+<section >
+    <mat-card-content class="card-content" *ngIf="articulo">
+      <img class="mat-card-image" src={{articulo.getImage()}} [alt]="articulo.getTitulo()">
+      <p class="card-title">
+        {{articulo.getTitulo()}}
       </p>
-      <p>
-        Price: {{ product.price }}
-      </p>
+      <div class="precio">
+        <label class="class-price">Precio: {{articulo.getPrecio()}}</label ><label class="rebaja">{{articulo.getRebaja()}}</label>
+      </div>
     </mat-card-content>
-
+</section>

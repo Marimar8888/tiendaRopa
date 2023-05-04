@@ -1,78 +1,89 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ArticuloTienda } from '../../articulo/model/articuloTienda.model';
 
 @Component({
   selector: 'app-productos',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.scss']
 })
-export class ProductosComponent {
-  title = 'My Store';
+export class ProductosComponent implements OnInit{
+  @Input() articulosList!: ArticuloTienda [];
+
+  constructor(
+
+  ){}
+
+  ngOnInit(): void {
+
+  }
+
 
   products = [
     {
         id:1,
-        title: 'Camiseta',
+        title: 'Abrigo',
         price: 30000,
         category: '...',
-        description: 'Camiseta con el logo de la empresa, en algodón ...',
+        description: 'Abrigo',
         image: 'https://via.placeholder.com/150'
     },
     {
         id:1,
-        title: 'Llavero',
+        title: 'Chaqueta',
         price: 10000,
         category: '',
-        description: 'Llavero del logo de la empresa ...',
+        description: 'Chaqueta',
         image: 'https://via.placeholder.com/150'
     },
     {
       id:1,
-      title: 'Llavero',
+      title: 'Pantalones',
       price: 10000,
       category: '',
-      description: 'Llavero del logo de la empresa ...',
+      description: 'Pantalones',
       image: 'https://via.placeholder.com/150'
     },
     {
       id:1,
-      title: 'Llavero',
+      title: 'Sport',
       price: 10000,
       category: '',
-      description: 'Llavero del logo de la empresa ...',
+      description: 'Sport del logo de la empresa ...',
       image: 'https://via.placeholder.com/150'
     },
     {
       id:1,
-      title: 'Llavero',
+      title: 'Corbatas',
       price: 10000,
       category: '',
-      description: 'Llavero del logo de la empresa ...',
+      description: 'Corbatas',
       image: 'https://via.placeholder.com/150'
     },
     {
       id:1,
-      title: 'Llavero',
-      price: 10000,
-      category: '',
-      description: 'Llavero del logo de la empresa ...',
+      title: 'Abrigo',
+      price: 30000,
+      category: '...',
+      description: 'Abrigo',
       image: 'https://via.placeholder.com/150'
-    },
-    {
+  },
+  {
       id:1,
-      title: 'Llavero',
+      title: 'Chaqueta',
       price: 10000,
       category: '',
-      description: 'Llavero del logo de la empresa ...',
+      description: 'Chaqueta',
       image: 'https://via.placeholder.com/150'
-    },
-    {
-      id:1,
-      title: 'Llavero',
-      price: 10000,
-      category: '',
-      description: 'Llavero del logo de la empresa ...',
-      image: 'https://via.placeholder.com/150'
-    }
+  },
+  {
+    id:1,
+    title: 'Pantalones',
+    price: 10000,
+    category: '',
+    description: 'Pantalones',
+    image: 'https://via.placeholder.com/150'
+  }
+
 
     ];
 }

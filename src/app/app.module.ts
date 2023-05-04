@@ -36,7 +36,13 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ProductoComponent } from './entidades/producto/producto/producto.component';
 import { ProductosComponent } from './entidades/producto/productos/productos.component';
+import { PantalonesComponent } from './dashboard/tienda/pantalones/pantalones.component';
+import { SportsComponent } from './dashboard/tienda/sports/sports.component';
+import { AbrigosComponent } from './dashboard/tienda/abrigos/abrigos.component';
+import { ChaquetasComponent } from './dashboard/tienda/chaquetas/chaquetas.component';
+import { CorbatasComponent } from './dashboard/tienda/corbatas/corbatas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -58,7 +64,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CarouselListComponent,
     CategoriasCarouselComponent,
     ProductoComponent,
-    ProductosComponent
+    ProductosComponent,
+    PantalonesComponent,
+    SportsComponent,
+    AbrigosComponent,
+    ChaquetasComponent,
+    CorbatasComponent
 
   ],
   imports: [

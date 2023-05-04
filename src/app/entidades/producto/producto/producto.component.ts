@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ArticuloTienda } from '../../articulo/model/articuloTienda.model';
 
 
 @Component({
@@ -8,7 +9,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductoComponent {
 
-  @Input() product!: any;
+    //Va a recibir un objeto de la clase Articulos
+    @Input() articulo: ArticuloTienda | undefined;
 
 
 
