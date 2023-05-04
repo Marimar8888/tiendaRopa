@@ -1,0 +1,27 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.products {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5%;
+  .card {
+    width: 90%;
+    margin: 15px;
+    text-align: center;
+
+
+    @media only screen and (min-width: 860px) {
+        width: 20%;
+    }
+
+  }
+
+ mat-card.mat.mdc-card {
+    width: 50%;
+    height: 50%;
+  }
+
+
+}

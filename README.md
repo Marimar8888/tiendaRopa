@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
 
+## Librerías instaladas
+
+Para los carouseles de Bootstrap, es necesario instalar unas librerías específicas, con las habituales no funciona bien el carousel al cambiar de página y volver se para.
+
+Para el carousel de imagenes del home `https://ng-bootstrap.github.io/#/components/carousel/examples`
+
+Para el carousel de categorías del home `https://www.positronx.io/angular-image-slider-with-lightbox-tutorial-with-example/`
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -25,3 +34,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+

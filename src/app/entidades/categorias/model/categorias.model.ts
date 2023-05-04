@@ -1,4 +1,4 @@
-export class Carousel {
+export class CategoriasCarousel {
   private _id: number;
   private _image: string;
   private _titulo: string;
@@ -8,28 +8,28 @@ export class Carousel {
       this._image = image;
       this._titulo = titulo
   }
-  get id(): number {
-      return this._id;
+  public getId(): number {
+    return this._id;
   }
 
-  get image(): string {
+  public getImage(): string {
       return this._image;
   }
-
-  get titulo(): string{
-      return this._titulo;
+  public getTitulo(): String {
+    return this._titulo;
   }
 
-  set id(id: number) {
+  public setId(id: number) {
       this._id = id;
   }
 
-  set image(image: string) {
+  public setImage(image: string) {
       this._image = image;
   }
 
-  set titulo(titulo: string){
-      this._titulo = titulo;
+  public setTitulo(titulo: string) {
+    this._titulo = titulo;
   }
+
 
 }

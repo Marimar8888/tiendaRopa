@@ -1,5 +1,16 @@
+<ngb-carousel class="carousel">
+	<ng-template *ngFor="let imagen of imagenesCategoria" ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img src="{{imagen.getImage()}}" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3></h3>
+			<a src=""></a>
+		</div>
+	</ng-template>
+</ngb-carousel>
 
-<div class="cuerpo-categorias">
+<!--<div class="cuerpo-categorias">
 
   <h1 class="title-banner">Descubre la variedad de prendas y complementos con un solo click!</h1>
 
@@ -149,7 +160,7 @@
         </div>
       </div>
   </div>
-</div>
+</div>-->
 
 
 
