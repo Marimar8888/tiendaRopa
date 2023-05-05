@@ -1,11 +1,15 @@
 <section >
-  <mat-card-content class="card-content" *ngIf="articulo">
-    <img class="mat-card-image" src={{articulo.getImage()}} [alt]="articulo.getTitulo()">
+  <mat-card-content class="card-content" *ngIf="articulo" [routerLink]="['/ficha', articulo.getId()]">
+  <a><img class="mat-card-image" src={{articulo.getImage()}} [alt]="articulo.getTitulo()">
     <p class="card-title">
       {{articulo.getTitulo()}}
     </p>
     <div class="precio">
       <label class="class-price">Precio: {{articulo.getPrecio()}}</label ><label class="rebaja">{{articulo.getRebaja()}}</label>
-    </div>
+    </div></a>
   </mat-card-content>
+
 </section>
+<div id="group">
+  <i class="fas fa-heart"></i>
+</div>

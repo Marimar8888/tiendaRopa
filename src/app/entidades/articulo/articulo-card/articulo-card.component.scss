@@ -1,4 +1,7 @@
+$color_3: white;
 $color_6: red;
+$background-color_1: white;
+$background-color_5: rgb(212, 208, 208);
 
 img.mat-card-image {
 	width: 100%;
@@ -6,11 +9,19 @@ img.mat-card-image {
 	padding: 0px;
 	min-height: 220px;
 }
+
 .mat-mdc-card-content {
 	padding: 0;
 }
 .card-content {
-	padding: 0px;
+	padding: 0px 0 5px 0;
+}
+.card-content:hover{
+  transform: translateY(5px);
+  transition: all 0.5s;
+  background-color: $background-color_5;
+
+
 }
 p.card-title {
 	padding: 10px 5px 0px 5px;
@@ -27,4 +38,34 @@ label.rebaja {
 	margin-left: 10px;
 	font-size: large;
 	font-weight: bold;
+}
+div #group {
+	background-color: $background-color_1;
+	>i.fas {
+		color: $color_3;
+		text-decoration: none;
+		font-size: 20px;
+		transition: 0.35s ease-in-out;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		display: inline-block;
+		&:hover {
+			color: $color_6;
+			text-decoration: none;
+			font-size: 28px;
+			transition: 0.35s ease-in-out;
+			position: absolute;
+		}
+		&:checked {
+			color: $color_6;
+			text-decoration: none;
+			font-size: 28px;
+			transition: 0.35s ease-in-out;
+			position: absolute;
+		}
+	}
+}
+a:hover{
+  cursor: pointer;
 }

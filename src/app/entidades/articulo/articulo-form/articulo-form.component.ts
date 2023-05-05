@@ -16,7 +16,7 @@ export class ArticuloFormComponent implements OnInit {
 
   ngOnInit(): void {
       //inspeccionar la ruta activa con un idArticulo si no tiene valor devuelve undefined
-      this.idArticulo = this.route.snapshot.paramMap.get('idArticulo') ?? undefined;
+      this.idArticulo = this.route.snapshot.paramMap.get('id') ?? undefined;
 
   }
 

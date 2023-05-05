@@ -32,25 +32,21 @@ export class HomeComponent implements OnInit{
     this.categoriaService.obternerImagenesCategoriasCarousel().subscribe(
       (data) =>{
         data.forEach( (imagen) =>{ //recibo los artículos y a través de la interfaz recupero los datos
-          console.log(imagen);
           const imagenNew: CategoriasCarousel = new CategoriasCarousel(imagen.id, imagen.image, imagen.titulo);
-          this.imagenesCategoria.push(imagenNew);
+            this.imagenesCategoria.push(imagenNew);
 
         })
+        console.log(this.imagenesCategoria);
       }
-
     )
-
   }
 
   private obternerImagenesCarousel() {
     this.carouselService.obternerImagenesCarousel().subscribe(
        (data) =>{
          data.forEach( (imagen) =>{ //recibo los artículos y a través de la interfaz recupero los datos
-           console.log(imagen);
            const imagenNew: Carousel = new Carousel(imagen.id, imagen.image, imagen.active);
            this.imagenesList.push(imagenNew);
-           console.log(imagenNew);
          })
        }
 
