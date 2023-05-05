@@ -10,7 +10,7 @@ import { NosotrosComponent } from './dashboard/nosotros/nosotros.component';
 import { NavComponent } from './layout/nav/nav.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { BannersComponent } from './layout/banners/banners.component';
-import { CategoriasComponent } from './layout/categorias/categorias.component';
+import { CategoriasComponent } from './entidades/categorias/categorias/categorias.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavCategoriasComponent } from './layout/nav-categorias/nav-categorias.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
@@ -18,7 +18,7 @@ import { ArticuloListComponent } from './entidades/articulo/articulo-list/articu
 import { ArticuloFormComponent } from './entidades/articulo/articulo-form/articulo-form.component';
 import { ArticuloCardComponent } from './entidades/articulo/articulo-card/articulo-card.component';
 import { CarouselListComponent } from './entidades/carousel/carousel-list/carousel-list.component';
-import { CategoriasCarouselComponent } from './entidades/categorias/categorias-carousel/categorias-carousel.component';
+
 
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpRequestIntercept } from './config/interceptores/httpRequest.interceptor';
@@ -27,7 +27,8 @@ import { HttpRequestIntercept } from './config/interceptores/httpRequest.interce
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 //Modulo instalado para el carousel con multiples item de bootstrap para angular, librería positronx.io instalada por comandos npm i ng-image-slider --force
-import { NgImageSliderModule } from 'ng-image-slider';
+//import { NgImageSliderModule } from 'ng-image-slider';
+
 //Para la visualización de la tienda
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -42,6 +43,7 @@ import { AbrigosComponent } from './dashboard/tienda/abrigos/abrigos.component';
 import { ChaquetasComponent } from './dashboard/tienda/chaquetas/chaquetas.component';
 import { CorbatasComponent } from './dashboard/tienda/corbatas/corbatas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -62,7 +64,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ArticuloFormComponent,
     ArticuloCardComponent,
     CarouselListComponent,
-    CategoriasCarouselComponent,
     ProductoComponent,
     ProductosComponent,
     PantalonesComponent,
@@ -77,11 +78,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    NgImageSliderModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatToolbarModule,
     MatCardModule
+
   ],
   exports:[
     MatCardModule
