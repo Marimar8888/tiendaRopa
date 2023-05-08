@@ -5,11 +5,14 @@
       {{articulo.getTitulo()}}
     </p>
     <div class="precio">
-      <label class="class-price">Precio: {{articulo.getPrecio()}}</label ><label class="rebaja">{{articulo.getRebaja()}}</label>
+      <label class="class-price" [ngClass]="{'rebajas':articulo.getRebaja()}"> {{articulo.getPrecio() | currency:'EUR':'symbol':'1.2-2':'es'}}</label >
+        <ng-template [ngIf]="articulo.getRebaja()">
+        <label class="rebaja">{{articulo.getRebaja() | currency:'EUR':'symbol':'1.2-2':'es'}}</label>
+        </ng-template>
     </div></a>
   </mat-card-content>
 
-</section>
-<div id="group">
-  <i class="fas fa-heart"></i>
-</div>
+  </section>
+  <div id="group">
+    <i class="fas fa-heart"></i>
+  </div>

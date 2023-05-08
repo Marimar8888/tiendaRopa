@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { IArticuloTienda } from '../interface/articuloTienda.interface';
+import { IArticulo } from '../interface/articulo.interface';
 
 
 @Injectable({
@@ -38,6 +39,10 @@ export class ArticuloService {
   public obternerSports(): Observable<IArticuloTienda[]> {
     const url: string = 'http://localhost:3007/articulos/sports';
     return this.http.get<IArticuloTienda[]>(url);
+  }
+  public obternerFichas(): Observable<IArticulo[]> {
+    const url: string = 'http://localhost:3011/articulos/fichas';
+    return this.http.get<IArticulo[]>(url);
   }
 
 

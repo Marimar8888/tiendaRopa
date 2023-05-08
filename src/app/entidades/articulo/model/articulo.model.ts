@@ -1,8 +1,9 @@
 export class Articulo {
-  private _idArt: number;
+  private _id: number;
   private _titulo: string;
   private _image: string;
   private _precio: number;
+  private _rebaja: number;
   private _tallaXs: boolean;
   private _tallaS: boolean;
   private _tallaM: boolean;
@@ -10,11 +11,12 @@ export class Articulo {
   private _tallaXl: boolean;
   private _tallaXxl: boolean;
 
-  constructor(idArt: number, titulo: string, image: string, precio: number, tallaXs: boolean, tallaS: boolean, tallaM: boolean, tallaL: boolean, tallaXl: boolean, tallaXxl: boolean) {
-      this._idArt = idArt;
+  constructor(id: number, titulo: string, image: string, precio: number, rebaja: number, tallaXs: boolean, tallaS: boolean, tallaM: boolean, tallaL: boolean, tallaXl: boolean, tallaXxl: boolean) {
+      this._id = id;
       this._titulo = titulo;
       this._image = image;
       this._precio = precio;
+      this._rebaja = rebaja;
       this._tallaXs = tallaXs;
       this._tallaS = tallaS;
       this._tallaM = tallaM;
@@ -23,17 +25,20 @@ export class Articulo {
       this._tallaXxl = tallaXxl;
   }
 
-  public getIdArt(): number{
-    return this._idArt;
+  public getId(): number{
+    return this._id;
   }
   public getTitulo(): string{
     return this._titulo;
   }
-  public getImagen(): string{
+  public getImage(): string{
     return this._image;
   }
   public getPrecio(): number{
     return this._precio;
+  }
+  public getRebaja(): number{
+    return this._rebaja;
   }
   public getTallaXs(): boolean{
     return this._tallaXs;
@@ -53,8 +58,8 @@ export class Articulo {
   public getTallaXxl(): boolean{
     return this._tallaXxl;
   }
-  public setIdArt(idArt: number){
-    this._idArt = idArt;
+  public setIdArt(id: number){
+    this._id = id;
   }
   public setTitulo(titulo: string){
     this._titulo = titulo;
@@ -64,6 +69,9 @@ export class Articulo {
   }
   public setPrecio(precio: number){
     this._precio = precio;
+  }
+  public setRebaja(rebaja: number){
+    this._rebaja = rebaja;
   }
   public setTallaXs(tallaXs: boolean){
     this._tallaXs = tallaXs;

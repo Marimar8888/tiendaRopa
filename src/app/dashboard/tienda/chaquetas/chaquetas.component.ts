@@ -26,10 +26,8 @@ export class ChaquetasComponent implements OnInit {
     this.articuloService.obternerChaquetas().subscribe({
       next: (articulosRequest) => {
         articulosRequest.forEach( (articulo) =>{ //recibo los artículos y a través de la interfaz recupero los datos
-          console.log(articulo);
           const articuloNew: ArticuloTienda = new ArticuloTienda(articulo.id, articulo.titulo, articulo.image, articulo.precio, articulo.rebaja);
           this.articulosList.push(articuloNew);
-          console.log(articuloNew);
         })
       },
       error: (err) => {this.gestionarError(err);}

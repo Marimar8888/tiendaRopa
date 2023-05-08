@@ -1,35 +1,35 @@
 $background-color_1: white;
 $background-color_5: rgb(212, 208, 208);
-$color_1: black;
+
 $color_3: white;
 
-#navbar{
-  padding: 0 0;
-  background-color: $background-color_1;
+#navbar {
+	padding: 0 0;
+	background-color: $background-color_1;
 }
-
-ul#nav-items{
-  position: absolute;
-  justify-content: right;
-  text-align: right;
-  display: flex;
-  width: 100%;
-  background-color: $background-color_1;
-  right: 0%;
-  font-style: italic;
-  padding: 10px 10px;
-
+ul#nav-items {
+	position: absolute;
+	justify-content: right;
+	text-align: right;
+	display: flex;
+	width: 100%;
+	background-color: $background-color_1;
+	right: 0%;
+	font-style: italic;
 }
-ul>li.active{
-
-  font-weight: bold;
-  font-style: italic;
-  background-color: $background-color_5;
+ul {
+	>li.active {
+		font-weight: bold;
+		font-style: italic;
+		background-color: $background-color_5;
+	}
 }
-
-li a.nav-link:hover{
-  background-color: $background-color_5;
-  color: white;
+li {
+	a.nav-link {
+		&:hover {
+			background-color: $background-color_5;
+			color: $color_3;
+		}
+	}
 }
-
 

@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import localeEs from '@angular/common/locales/es';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -43,6 +44,7 @@ import { AbrigosComponent } from './dashboard/tienda/abrigos/abrigos.component';
 import { ChaquetasComponent } from './dashboard/tienda/chaquetas/chaquetas.component';
 import { CorbatasComponent } from './dashboard/tienda/corbatas/corbatas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FichaComponent } from './dashboard/ficha/ficha.component';
 
 
 
@@ -70,7 +72,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SportsComponent,
     AbrigosComponent,
     ChaquetasComponent,
-    CorbatasComponent
+    CorbatasComponent,
+    FichaComponent
 
   ],
   imports: [
@@ -94,8 +97,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       provide: HTTP_INTERCEPTORS,
       useClass: HttpRequestIntercept,
       multi: true
+    },
+    {
+      provide: LOCALE_ID,
+      useValue: 'es-ES'
     }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
