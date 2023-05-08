@@ -1,4 +1,7 @@
-$background-color_7: rgb(192, 188, 188);
+$background-color_7: rgb(197, 180, 180);
+$background-color_5: rgb(212, 208, 208);
+
+$color_6: red;
 
 #kanban {
 	width: 60%;
@@ -11,36 +14,133 @@ $background-color_7: rgb(192, 188, 188);
 }
 .column_1 {
 	width: 30%;
+	min-width: 300px;
 	max-height: 100%;
 	display: inline-block;
 	margin-left: 50px;
-	top: 150px;
 }
 .column_2 {
 	width: 30%;
+	min-width: 400px;
 	max-height: 100%;
 	display: inline-block;
 	position: absolute;
-	margin-top: 50px;
-	margin-left: 15px;
+	margin-left: 50px;
 	text-align: left;
 }
 img {
 	width: 100%;
 	min-height: 350px;
 }
+.miniImg {
+	width: 20%;
+	min-height: 50px;
+}
 div.size {
 	border: 1px solid black;
 	display: inline-block;
 	margin: 10px;
-	width: 30px;
-	height: 30px;
+	width: 8%;
+	height: 100%;
 	background-color: $background-color_7;
 	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+}
+div.tag_line {
+	margin-bottom: 35px;
+}
+p.rebajas {
+	text-decoration: line-through;
+	font-size: 8px;
+	font-weight: normal;
+}
+p.cuerpo {
+	font-size: 22px;
+	font-weight: bold;
+}
+div.noexist {
+	text-decoration: line-through;
+	background-color: $background-color_5;
+	font-weight: lighter;
+}
+p.line_precio {
+	font-size: 20px;
+}
+p.line_rebaja {
+	font-weight: bold;
+	font-size: 25px;
+	color: $color_6;
+}
+p.miniTitle {
+	font-weight: bold;
+}
+.size_title {
+	font-weight: bold;
 }
 
-.rebaja{
-  color: red;
-  font-weight: bold;
-  font-size: 18px;
+.btn-primary:hover{
+  transition-duration: 0.4s;
+  background-color: white;
+  color: rgb(8, 8, 202);
+}
+
+@media (max-width: 1400px) {
+	div.size {
+		border: 1px solid black;
+		display: inline-block;
+		margin: 5px;
+		width: 10%;
+		background-color: $background-color_7;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 10px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 1200px) {
+	div.size {
+		border: 1px solid black;
+		display: inline-block;
+		margin: 5px;
+		width: 10%;
+		background-color: $background-color_7;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 8px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 1000px) {
+	.column_2 {
+		display: block;
+		margin-bottom: 20px;
+		position: relative;
+		min-width: 260px;
+	}
+	div.size {
+		border: 1px solid black;
+		display: inline-block;
+		margin: 5px;
+		width: 10%;
+		background-color: $background-color_7;
+		text-align: center;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 8px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 500px) {
+	.column_1 {
+		min-width: 220px;
+		max-height: 100%;
+		display: inline-block;
+		margin-left: 50px;
+		top: 150px;
+	}
 }

@@ -1,4 +1,4 @@
-<div id="kanban" *ngIf="articuloFicha">
+<div id="kanban" class="container" *ngIf="articuloFicha">
   <div *ngFor="let articulo of articuloFicha">
   <div class="column_1">
     <div class="card" >
@@ -7,27 +7,32 @@
       </div>
     </div>
   </div>
- <div class="column column_2">
+  <div class="column column_2">
     <div class="tags">
       <div class="tag_line">
         <hr class="line_4">
         <p class="cuerpo">{{articulo.getTitulo()}}</p>
         <span class="punto"></span>
-        <p class="line_text">{{articulo.getPrecio()}} €</p>
-        <p class="line_text" [ngClass]="articulo.getRebaja() ? 'rebaja' : 'noRebaja'">{{articulo.getRebaja()}} €</p>
+        <p class="line_precio" [ngClass]="{'rebajas':articulo.getRebaja()}"> {{articulo.getPrecio() | currency:'EUR':'symbol':'1.2-2':'es'}}</p>
+        <p class="line_rebaja" [ngClass]="articulo.getRebaja() ? 'rebaja' : 'noRebaja'">{{articulo.getRebaja() | currency:'EUR':'symbol':'1.2-2':'es'}}</p>
+      </div>
+      <div class="tag_line">
+        <p class="miniTitle">Color: Multicolor</p>
+        <img class="miniImg" src={{articulo.getImage()}} alt="perfil">
       </div>
       <div class="tag_line">
         <p class="size_title">Size:</p>
-        <div class="size">XS</div>
-        <div class="size">S</div>
-        <div class="size">M</div>
-        <div class="size">L</div>
-        <div class="size">XL</div>
-        <div class="size">XXL</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaXs()}">XS</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaS()}">S</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaM()}">M</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaL()}">L</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaXl()}">XL</div>
+        <div class="size" [ngClass]="{'noexist':!articulo.getTallaXxl()}">XXL</div>
       </div>
     </div>
+    <button  type="button" class="btn btn-primary">Añadir al Carrito</button>
   </div>
-   </div>
   </div>
+</div>
 
 
