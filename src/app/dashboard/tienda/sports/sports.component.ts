@@ -25,7 +25,7 @@ export class SportsComponent implements OnInit {
     this.articuloService.obternerSports().subscribe({
       next: (articulosRequest) => {
         articulosRequest.forEach( (articulo) =>{ //recibo los artículos y a través de la interfaz recupero los datos
-          const articuloNew: ArticuloTienda = new ArticuloTienda(articulo.id, articulo.titulo, articulo.image, articulo.precio, articulo.rebaja);
+          const articuloNew: ArticuloTienda = new ArticuloTienda(articulo.id, articulo.titulo, articulo.image, articulo.precio, articulo.rebaja, articulo.favorite);
           this.articulosList.push(articuloNew);
         })
       },

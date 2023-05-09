@@ -1,5 +1,6 @@
 <section >
   <mat-card-content class="card-content" *ngIf="articulo" [routerLink]="['/ficha', articulo.getId()]">
+
   <a><img class="mat-card-image" src={{articulo.getImage()}} [alt]="articulo.getTitulo()">
     <p class="card-title">
       {{articulo.getTitulo()}}
@@ -10,9 +11,10 @@
         <label class="rebaja">{{articulo.getRebaja() | currency:'EUR':'symbol':'1.2-2':'es'}}</label>
         </ng-template>
     </div></a>
+    <div id="group">
+      <i class="fas fa-heart" [ngClass]="{'favorito':articulo.getFavorite()}"></i>
+    </div>
   </mat-card-content>
 
   </section>
-  <div id="group">
-    <i class="fas fa-heart"></i>
-  </div>
+

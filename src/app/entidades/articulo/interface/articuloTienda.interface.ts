@@ -4,5 +4,6 @@ export interface IArticuloTienda{
    titulo: string;
    precio: number;
    rebaja: number;
+   favorite: boolean;
 
 }

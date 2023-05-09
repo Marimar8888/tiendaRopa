@@ -1,6 +1,6 @@
 $color_3: white;
 $color_6: red;
-$background-color_1: white;
+
 $background-color_5: rgb(212, 208, 208);
 
 img.mat-card-image {
@@ -9,23 +9,20 @@ img.mat-card-image {
 	padding: 0px;
 	min-height: 220px;
 }
-
 .mat-mdc-card-content {
 	padding: 0;
 }
 .card-content {
 	padding: 0px 0 5px 0;
-}
-.card-content:hover{
-  transform: translateY(5px);
-  transition: all 0.5s;
-  background-color: $background-color_5;
-
-
+	&:hover {
+		transform: translateY(5px);
+		transition: all 0.5s;
+		background-color: $background-color_5;
+	}
 }
 p.card-title {
 	padding: 10px 5px 0px 5px;
-  font-weight: bold;
+	font-weight: bold;
 }
 p.card-price {
 	padding: 0px auto 0px;
@@ -40,8 +37,8 @@ label.rebaja {
 	font-size: large;
 	font-weight: bold;
 }
-div #group {
-	background-color: $background-color_1;
+#group {
+	color: $color_3;
 	>i.fas {
 		color: $color_3;
 		text-decoration: none;
@@ -58,19 +55,20 @@ div #group {
 			transition: 0.35s ease-in-out;
 			position: absolute;
 		}
-		&:checked {
-			color: $color_6;
-			text-decoration: none;
-			font-size: 28px;
-			transition: 0.35s ease-in-out;
-			position: absolute;
-		}
+	}
+	>i.favorito {
+		color: $color_6;
+		text-decoration: none;
+		font-size: 28px;
+		transition: 0.35s ease-in-out;
+		position: absolute;
 	}
 }
-a:hover{
-  cursor: pointer;
+a {
+	&:hover {
+		cursor: pointer;
+	}
 }
-
-.rebajas{
-  text-decoration: line-through;
+.rebajas {
+	text-decoration: line-through;
 }

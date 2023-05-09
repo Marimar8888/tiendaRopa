@@ -6,14 +6,16 @@ export class ArticuloTienda  {
   private _titulo: string;
   private _precio: number;
   private _rebaja: number;
+  private _favorite: boolean;
 
 
-  constructor(id: number, titulo:string, image: string, precio: number, rebaja: number) {
+  constructor(id: number, titulo:string, image: string, precio: number, rebaja: number, favorite: boolean) {
       this._id = id;
       this._image = image;
       this._titulo = titulo;
       this._precio = precio;
       this._rebaja = rebaja;
+      this._favorite = favorite;
   }
 
   public getId(): number{
@@ -32,6 +34,9 @@ export class ArticuloTienda  {
   }
   public getRebaja(): number{
     return this._rebaja;
+  }
+  public getFavorite(): boolean{
+    return this._favorite;
   }
 
   public setIdArt(id: number){
@@ -52,6 +57,10 @@ export class ArticuloTienda  {
   public setRebaja(rebaja: number){
     this._rebaja = rebaja;
   }
+  public setFavorite(favorite: boolean){
+    this._favorite = favorite;
+  }
+
 
 
 }
