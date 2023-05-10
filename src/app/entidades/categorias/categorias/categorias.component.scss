@@ -1,70 +1,41 @@
-$color_1: black;
 $color_3: white;
 $color_4: wheat;
-$color_5:rgb(255, 69, 100);
+
 $background-color_2: rgb(255, 69, 100);
-$background-color_1: white;
 
 div.cuerpo-categorias {
 	background-color: $background-color_2;
 	padding-bottom: 30px;
 }
 div#carousel {
-	width: 60%;
+	width: 65%;
 	margin: 0 auto;
 }
+
 div#cuerpo-categorias {
-	width: 60%;
+	width: 100%;
 	position: relative;
 	margin: 0 auto;
 	p {
-		margin-right: 65px;
 		float: left;
-		padding-left: 30px;
 		justify-content: center;
 		text-align: center;
 	}
 }
-p.card {
-	.card-text {
-		position: absolute;
-		top: 85%;
-		left: 30%;
-		text-align: center;
-		font-weight: bold;
-		height: 0;
-		border: none;
-	}
-}
-p {
-	.card-text {
-		background-color: $background-color_1;
-	}
-	.card {
-		color: $color_1;
-	}
-}
-.card {
-	width: 35%;
-	margin: 10px;
+div.carousel-link{
+	width: 65%;
+	margin: 0 auto;
 
 }
-.banner {
-	width: 60%;
+div.row{
+  width: 100%;
+  margin: 0 auto;
+
 }
-.item {
-	min-width: 20%;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	max-height: 30%;
-}
-.items {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+
+div.col>div{
+ width: 100%
+
 }
 .title-banner {
 	color: $color_3;
@@ -78,13 +49,19 @@ img {
 	min-height: 160px;
 	position: relative;
 }
-div.carousel-link {
-	width: 60%;
-	margin: 0 auto;
-}
+
 p.card-text {
+  width: 100%;
+  padding: 0 15px;
+  margin: 5px;
+
 	a {
 		color: $color_3;
+    text-decoration: none;
+    text-align: center;
+
+
+
 		&:hover {
 			color: $color_4;
 			text-decoration: none;
@@ -94,4 +71,12 @@ p.card-text {
 			text-decoration: none;
 		}
 	}
+}
+ul {
+	-webkit-columns: 5;
+	-moz-columns: 5;
+	columns: 5;
+}
+li {
+	list-style: none;
 }

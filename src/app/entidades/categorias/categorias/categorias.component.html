@@ -1,113 +1,24 @@
-
-
 <div class="cuerpo-categorias">
 
   <h1 class="title-banner">Descubre la variedad de prendas y complementos con un solo click!</h1>
 
-  <div id="carousel" class="carousel slide" data-ride="carousel"  >
+  <div id="carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col">
-            <div class="bg-secondary  text-white text-center" >
-              <img class="card-img-top" src="./assets/img/abrigo.jpg" alt="Imagen de abrigos" >
-            </div>
-
-          </div>
-             <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/chaqueta.jpg" alt="Imagen de una chaqueta" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/pantalones.jpg" alt="Imagen de pantalones">
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/deporte.jpg" alt="Imagen de Ropa deporte" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/corbatas.jpg" alt="Imagen de corbatas" >
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col">
-            <div class="bg-secondary  text-white text-center" >
-              <img class="card-img-top" src="./assets/img/abrigo.jpg" alt="Imagen de abrigos">
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/chaqueta.jpg" alt="Imagen de una chaqueta" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/pantalones.jpg" alt="Imagen de pantalones">
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/deporte.jpg" alt="Imagen de Ropa deporte" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/corbatas.jpg" alt="Imagen de corbatas" >
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col">
-            <div class="bg-secondary  text-white text-center" >
-              <img class="card-img-top" src="./assets/img/abrigo.jpg" alt="Imagen de abrigos">
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/chaqueta.jpg" alt="Imagen de una chaqueta" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/pantalones.jpg" alt="Imagen de pantalones">
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary  text-white text-center">
-              <img class="card-img-top" src="./assets/img/deporte.jpg" alt="Imagen de Ropa deporte" >
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary text-white text-center">
-              <img class="card-img-top" src="./assets/img/corbatas.jpg" alt="Imagen de corbatas" >
-
-            </div>
-          </div>
-        </div>
-      </div>
+      <ul id="banner" class="banner items carousel-item active" >
+        <li *ngFor="let imagen of imagenesCategoria">
+          <img class="card-img-top" src="{{imagen.getImage()}}" alt="Imagen de una Abrigo">
+        </li>
+      </ul>
+      <ul id="banner" class="banner items carousel-item " >
+        <li *ngFor="let imagen of imagenesCategoria">
+          <img class="card-img-top" src="{{imagen.getImage()}}" alt="Imagen de una Abrigo">
+        </li>
+      </ul>
+      <ul id="banner" class="banner items carousel-item " >
+        <li *ngFor="let imagen of imagenesCategoria">
+          <img class="card-img-top" src="{{imagen.getImage()}}" alt="Imagen de una Abrigo">
+        </li>
+      </ul>
     </div>
     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,15 +32,13 @@
   <div class="carousel-link">
       <div class="row">
         <div class="col">
-          <div class="bg-terciary  text-white text-center" >
+          <div class="bg-terciary text-white text-center" >
             <p class="card-text"><a [routerLink]="['tienda/abrigos']">Abrigos</a></p>
           </div>
-
         </div>
           <div class="col">
           <div class="bg-terciary  text-white text-center">
             <p class="card-text"><a [routerLink]="['tienda/chaquetas']">Chaquetas</a></p>
-
           </div>
         </div>
         <div class="col">
@@ -149,5 +58,5 @@
           </div>
         </div>
       </div>
-  </div>
 </div>
+
