@@ -4,73 +4,19 @@ $color_4: wheat;
 $background-color_2: rgb(255, 69, 100);
 
 div.cuerpo-categorias {
-	background-color: $background-color_2;
+	background-color: rgb(255, 69, 100);
 	padding-bottom: 30px;
 }
-div#carousel {
-	width: 65%;
-	margin: 0 auto;
-}
-
-div#cuerpo-categorias {
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-	p {
-		float: left;
-		justify-content: center;
-		text-align: center;
-	}
-}
-div.carousel-link{
-	width: 65%;
-	margin: 0 auto;
-
-}
-div.row{
-  width: 100%;
-  margin: 0 auto;
-
-}
-
-div.col>div{
- width: 100%
-
-}
 .title-banner {
-	color: $color_3;
+	color: white;
 	text-align: center;
 	margin-top: 5px;
 	padding: 10px;
 	font-size: 2em;
 }
-img {
-	width: 100%;
-	min-height: 160px;
-	position: relative;
-}
-
-p.card-text {
-  width: 100%;
-  padding: 0 15px;
-  margin: 5px;
-
-	a {
-		color: $color_3;
-    text-decoration: none;
-    text-align: center;
-
-
-
-		&:hover {
-			color: $color_4;
-			text-decoration: none;
-			font-size: 18px;
-		}
-		&:active {
-			text-decoration: none;
-		}
-	}
+div#carousel {
+	width: 65%;
+	margin: 0 auto;
 }
 ul {
 	-webkit-columns: 5;
@@ -79,4 +25,42 @@ ul {
 }
 li {
 	list-style: none;
+}
+img {
+	width: 100%;
+	min-height: 160px;
+	position: relative;
+}
+
+div.carousel-link {
+	width: 65%;
+	margin: 0 auto;
+}
+div.row {
+	width: 100%;
+	margin: 0 auto;
+}
+div.col {
+	>div {
+		width: 100%;
+	}
+}
+p.card-text {
+  width: 100%;
+  padding: 0 15px;
+  margin: 5px;
+	a {
+		color: white;
+    text-decoration: none;
+    text-align: center;
+		&:hover {
+			color: $color_4;
+			text-decoration: none;
+			font-size: 16px;
+      transition: ease-in-out 0.29s;
+		}
+		&:active {
+			text-decoration: none;
+		}
+	}
 }
